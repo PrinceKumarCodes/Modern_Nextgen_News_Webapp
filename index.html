@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="main-nav container flex">
+      <a href="#" class="company-logo" onclick="reload()">
+        <img src="/Image/logo1.png" alt="" />
+      </a>
+
+      <div class="nav-links">
+        <ul class="flex">
+          <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">
+            IPL
+          </li>
+          <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">
+            Finance
+          </li>
+          <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">
+            Politics
+          </li>
+          <li class="hover-link nav-item" id="education" onclick="onNavItemClick('education')">
+            Education
+          </li>
+        </ul>
+      </div>
+      <div class="search-bar flex">
+        <img src="/Image/sun-50.png" alt="" class="sun-icon" id="sun-icon" />
+        <input type="text" class="news-input" id="search-text" placeholder="e.g. Science" />
+        <button class="search-button" id="search-button">Search</button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="cards-container container flex" id="cards-container"></div>
+  </main>
+
+  <template id="template-news-card">
+    <div class="card">
+      <div class="card-header">
+        <img src="https://via.placeholder.com/400x200" alt="" id="news-image" />
+      </div>
+      <div class="card-content">
+        <h3 id="news-title">this is title</h3>
+        <h6 class="news-source" id="news-source">End gedget 20/08/2024</h6>
+        <p class="news-desc" id="news-desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus non
+          numquam quae illum cupiditate, eum recusandae? Natus at recusandae
+          doloribus odit suscipit cum adipisci quas velit? Excepturi tenetur
+          sapiente vero?
+        </p>
+      </div>
+    </div>
+  </template>
+
+  <footer class="footer">
+    <div class="social">
+      <a href="mailto:princekumarcbcs2022@gmail.com" target="_blank"><img src="/Image/email-48.png" alt="" /></a>
+      <a href="https://github.com/PrinceKumarsinghCode" target="_blank"><img src="/Image/github-48.png" alt="" /></a>
+      <a href="https://www.linkedin.com/in/prince-kumar-singh-professional" target="_blank"><img
+          src="/Image/linkedin-48.png" alt="" /></a>
+      <a href="#" target="_blank"><img src="/Image/location-48.png" alt="" /></a>
+      <a href="#" target="_blank"><img src="/Image/geography-48.png" alt="" /></a>
+    </div>
+    <small class="message">Thanks for visiting my portfolio website!</small>
+    <small class="copyright">&copy; Copyright 2024. All rights reserved.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
